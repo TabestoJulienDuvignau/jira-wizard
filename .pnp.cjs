@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["#", "link:./test::locator=jira-wizard%40workspace%3A."],
             ["$", "link:./src::locator=jira-wizard%40workspace%3A."],
-            ["@actions/core", "npm:1.4.0"],
+            ["@actions/core", "npm:1.6.0"],
             ["@actions/github", "npm:5.0.0"],
             ["@commitlint/cli", "npm:13.2.0"],
             ["@commitlint/config-conventional", "npm:13.2.0"],
@@ -95,10 +95,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@actions/core", [
-        ["npm:1.4.0", {
-          "packageLocation": "./.yarn/cache/@actions-core-npm-1.4.0-82fe1c0286-bdad9fedeb.zip/node_modules/@actions/core/",
+        ["npm:1.6.0", {
+          "packageLocation": "./.yarn/cache/@actions-core-npm-1.6.0-a2628c48cb-ac4689b609.zip/node_modules/@actions/core/",
           "packageDependencies": [
-            ["@actions/core", "npm:1.4.0"]
+            ["@actions/core", "npm:1.6.0"],
+            ["@actions/http-client", "npm:1.0.11"]
           ],
           "linkType": "HARD",
         }]
@@ -7219,7 +7220,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jira-wizard", "workspace:."],
             ["#", "link:./test::locator=jira-wizard%40workspace%3A."],
             ["$", "link:./src::locator=jira-wizard%40workspace%3A."],
-            ["@actions/core", "npm:1.4.0"],
+            ["@actions/core", "npm:1.6.0"],
             ["@actions/github", "npm:5.0.0"],
             ["@commitlint/cli", "npm:13.2.0"],
             ["@commitlint/config-conventional", "npm:13.2.0"],

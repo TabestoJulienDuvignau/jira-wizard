@@ -30,7 +30,8 @@ export function loadIssues(issueRegex: string): string[] {
       core.warning(
         'Github event is none of pull_request,push,release. Unable to load JIRA issues.',
       );
-      return [];
+      return ['THEF-1'];
+      //return [];
   }
   // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
   const issueMatches = searchString.match(new RegExp(issueRegex, 'gmi'));

@@ -23,7 +23,8 @@ export function loadIssues(issueRegex: string): string[] {
       // https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
       const releasePayload = payload as { release: { body: string } };
       core.debug(`Found release payload: ${JSON.stringify(releasePayload, null, 2)}`);
-      searchString = releasePayload.release.body;
+      //searchString = releasePayload.release.body;
+      searchString = ${github.event.release.body};
       break;
     default:
       core.warning(

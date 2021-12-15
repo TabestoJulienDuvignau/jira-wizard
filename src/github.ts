@@ -35,7 +35,8 @@ export function loadIssues(issueRegex: string): string[] {
   // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
   const issueMatches = searchString.match(new RegExp(issueRegex, 'gmi'));
   if (!issueMatches) {
-    return [];
+    return searchString;
+    //return [];
   }
   const uniqueMatches = new Set(issueMatches);
   // Make issue list unique and strip any characters that are not alphanumeric or '-'

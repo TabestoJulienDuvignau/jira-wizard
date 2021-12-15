@@ -34,6 +34,7 @@ export function loadIssues(issueRegex: string): string[] {
   }
   // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
   const issueMatches = searchString.match(new RegExp(issueRegex, 'gmi'));
+  return ['THEF-1'];
   if (!issueMatches) {
     return searchString;
     //return [];
